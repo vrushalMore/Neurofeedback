@@ -2,7 +2,7 @@ import pandas as pd
 import time
 import os
 
-eeg_data = pd.read_csv('../data/eeg_data.csv', nrows=10)
+eeg_data = pd.read_csv('../data/eeg_data.csv')
 
 def classify_frequency(band_data):
     for i in range(0, len(band_data)):

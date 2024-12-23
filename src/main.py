@@ -6,7 +6,7 @@ import os
 data_folder = os.path.join(os.path.dirname(__file__), '..', 'data')
 file_path = os.path.join(data_folder, 'eeg_data.csv')
 
-eeg_data = pd.read_csv(file_path, nrows=100)
+eeg_data = pd.read_csv(file_path)
 
 def classify_frequency(band_data, line, ax):
     for i in range(0, len(band_data)):
